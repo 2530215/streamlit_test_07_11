@@ -4,6 +4,9 @@ st.title('나의 첫 웹 서비스 만들기!!')
 
 # 사용자 입력 받기
 name = st.text_input('이름을 입력해주세요 : ')
+sex=st.selectboc("성별을 선택해주세요:",[
+                 "여성","남성
+])
 mbti = st.selectbox('MBTI를 선택해주세요:', [
     'INTJ', 'INTP', 'ENTJ', 'ENTP', 'INFJ', 'INFP', 'ENFJ', 'ENFP', 
     'ISTJ', 'ISFJ', 'ESTJ', 'ESFJ', 'ISTP', 'ISFP', 'ESTP', 'ESFP'
