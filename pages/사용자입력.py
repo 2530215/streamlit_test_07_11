@@ -38,8 +38,14 @@ text_content = None
 if uploaded_text:
     text_content = uploaded_text.read().decode("utf-8")
 
+uploaded_novel=st.file_uploader("님이 쓴 소설을 업로드하세요", type=["txt"])
+novel_content = None
+if uploaded_novel:
+    novel_content=uploaded_novel.read().decode("utf-8")
+
 # 7. 이미지 업로드
 uploaded_image = st.file_uploader("이미지 파일을 업로드하세요", type=["png", "jpg", "jpeg"])
+uploaded_city=st.file_uploader("도시 사진 이미지를 업로드하세요", type=["png", "jpg", "jpeg"])
 
 # 8. 카메라 입력
 camera_image = st.camera_input("카메라로 사진을 찍어보세요")
@@ -47,7 +53,7 @@ camera_image = st.camera_input("카메라로 사진을 찍어보세요")
 # --- 출력부 ---
 st.markdown("---")
 st.subheader("입력 결과 확인")
-
+st.write("안녕하세요! 더운 여름이네요.")
 if name:
     st.write(f"🙋 이름: {name}")
 if age:
