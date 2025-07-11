@@ -15,12 +15,15 @@ st.markdown("아래 입력 칸들을 채워보세요. 입력한 값은 실시간
 
 # 1. 텍스트 입력
 name = st.text_input("이름을 입력하세요")
+school_name=st.text_input("학교 이름을 입력하세요")
 
 # 2. 숫자 입력
 age = st.number_input("나이를 입력하세요", min_value=0, max_value=120, step=1)
+weight=st.number_input("몸무게를 입력하세요", min_value=0, max_value=300, step=2)
 
 # 3. 라디오 버튼
 favorite_color = st.radio("좋아하는 색을 선택하세요", ["빨강", "파랑", "노랑"], horizontal=True)
+sex=st.radio("성별을 선택하세요",["여성","남성"],horizontal=False)
 
 # 4. 셀렉트 박스
 hobby = st.selectbox("취미를 선택하세요", ["독서", "운동", "음악", "게임", "기타"])
