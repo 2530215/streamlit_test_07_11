@@ -27,6 +27,7 @@ sex=st.radio("성별을 선택하세요",["여성","남성"],horizontal=False)
 
 # 4. 셀렉트 박스
 hobby = st.selectbox("취미를 선택하세요", ["독서", "운동", "음악", "게임", "기타"])
+subject=st.selectbox("선택과목을 선택하세요",["세계지리","생활과 윤리","사회문화"]
 
 # 5. 체크박스
 agree = st.checkbox("위의 내용을 모두 확인하였습니다.")
